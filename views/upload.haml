@@ -1,0 +1,11 @@
+%div 
+	%form{:action => '/upload', :method => 'post', :enctype => 'multipart/form-data'}
+		%fieldset
+			%legend Upload a Draft
+			%label{:for => "draft_log"} 
+				Choose A File to Upload
+				%input{:type => "file", :id => "draft_log", :name => "draft_log"} 
+			%input{:type => "submit", :value => "Submit"}
+- if defined?(output)
+	%pre
+	= output		

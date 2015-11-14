@@ -1,0 +1,16 @@
+%form{:action => "new_document", :method => "post"}
+	%fieldset
+		%legend Store Document
+		%label{:for => "first_name"} 
+			First Name
+			%input{:id => "first_name", :name => "first_name", :type => "text", :placeholder => "Jon"} 
+		%label{:for => "last_name"} 
+			Last Name
+			%input{:id => "last_name", :name => "last_name", :type => "text", :placeholder => "Snow"} 
+		%label{:for => "eye_color"} 
+			Eye Color
+			%input{:id => "eye_color", :name => "eye_color", :type => "text", :placeholder => "Black as Death"} 
+		%label{:for => "tv_dinner"} 
+			Favorite TV Dinner
+			%input{:id => "tv_dinner", :name => "tv_dinner", :type => "text", :placeholder => "Hungry Man?"} 
+		%input{:type => "Submit", :value => "Go!"}
